@@ -1,0 +1,354 @@
+﻿<!--
+
+body {
+font-family: "Times New Roman", Times, serif;
+font-size: 16px;
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+}
+
+td.special {
+font-family: "Courier New", Courier, monospace;
+font-size: 12px;
+font-weight: bold;
+}
+
+input.variable {
+background-color: rgb(255,255,255);
+color: rgb(0,0,0);
+font-family: "Courier New", Courier, monospace;
+font-size: 12px;
+font-weight: bold;
+}
+
+select.variable1 {
+font-family: "Courier New", Courier, monospace;
+font-size: 12px;
+font-weight: bold;
+}
+
+input.variable2 {
+background-color: rgb(0,0,0);
+border: solid 1px rgb(255,255,255);
+font-family: "Courier New", Courier, monospace;
+font-size: 12px;
+font-weight: bold;
+}
+
+input.bouton {
+background-color: rgb(60,35,35);
+color: rgb(255,255,255);
+border: solid 1px rgb(255,255,255);
+font-family: "Courier New", Courier, monospace;
+font-size: 12px;
+font-weight: bold;
+}
+
+p.center {
+text-align: center;
+}
+
+div.center {
+text-align: center;
+}
+
+table {
+margin-left: auto;
+margin-right: auto;
+}
+
+table.speaker {
+    color: rgb(0,0,0);
+    font-weight: bold;
+    text-align: center;
+    width: 285px;
+    height: 150px;
+    background-image: url(../image/speaker.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.speaker_double {
+    color: rgb(0,0,0);
+    font-weight: bold;
+    text-align: center;
+    width: 570px;
+    height: 150px;
+    background-image: url(../image/speaker.png);
+    background-position: top left;
+}
+
+table.sample0 {
+    color: rgb(255,255,255);
+    font-weight: bold;
+    text-align: center;
+    width: 350px;
+    height: 130px;
+    background-image: url(../image/texte.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.sample0l {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 600px;
+    height: 215px;
+    background-image: url(../image/texte-large.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.guestbook {
+    color: rgb(255,255,255);
+    text-align: left;
+    width: 650px;
+    height: 95px;
+    background-image: url(../image/bordure.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.guestbookf {
+    color: rgb(255,255,255);
+    text-align: right;
+    width: 650px;
+    height: 95px;
+    background-image: url(../image/bordure-f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+table.quest {
+    color: rgb(255,255,255);
+    width: 950px;
+    height: 95px;
+    background-image: url(../image/bordurel.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.questf {
+/*    color: rgb(102,153,255); */
+    color: rgb(255,255,255);
+    width: 950px;
+    height: 95px;
+    background-image: url(../image/bordurel-f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-align: left;
+}
+
+a {
+    color: rgb(102,153,255);
+    text-decoration: none; 
+}
+
+a:hover {
+    color: rgb(255,0,0);
+    text-decoration: underline;
+}
+
+table.bordure {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 650px;
+    height: 95px;
+    background-image: url(../image/bordure.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.borduref {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 650px;
+    height: 95px;
+    background-image: url(../image/bordure-f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+table.bordures {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 650px;
+    height: 215px;
+    background-image: url(../image/bordures.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.bordurel {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 950px;
+    height: 95px;
+    background-image: url(../image/bordurel.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.bordurelf {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 950px;
+    height: 95px;
+    background-image: url(../image/bordurel-f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+table.bordure1000 {
+    color: rgb(255,255,255);
+    text-align: left;
+    width: 1000px;
+    height: 95px;
+    background-image: url(../image/bordure1000-d.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.bordure1000f {
+    color: rgb(255,255,255);
+    text-align: left;
+    width: 1000px;
+    height: 95px;
+    background-image: url(../image/bordure1000-f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+table.bordure1000s {
+    color: rgb(255,255,255);
+    text-align: left;
+    width: 1000px;
+    height: 215px;
+    background-image: url(../image/bordure1000-s.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.borduresl {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 1020px;
+    height: 215px;
+    background-image: url(../image/borduresl.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.bordurels {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 1024px;
+    height: 680px;
+    background-image: url(../image/bordurels.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.bordurelsf {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 1024px;
+    height: 95px;
+    background-image: url(../image/bordurels-f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+table.bordurelg {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 1024px;
+    height: 420px;
+    background-image: url(../image/bordurels.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.bordurelgf {
+    color: rgb(255,255,255);
+    text-align: center;
+    width: 1024px;
+    height: 90px;
+    background-image: url(../image/bordurels-f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+table.bordure_pet_d {
+    color: rgb(255,255,255);
+    width: 1020px;
+    height: 15px;
+    background-image: url(../image/bordure_pet_d.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+table.bordure_pet_f {
+    color: rgb(255,255,255);
+    width: 1020px;
+    height: 15px;
+    background-image: url(../image/bordure_pet_f.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+tr.bord {
+  height: 30px;
+}
+
+tr.normal {
+  height: 150px;
+}
+
+tr.armure {
+  height: 120px;
+}
+
+tr.fin {
+  text-align: left;
+  height: 110px;
+}
+
+tr.gros {
+  height: 170px;
+}
+
+tr.texte {
+  font-weight: bold;
+  height: 50px;
+}
+
+tr.texte2 {
+  height: 50px;
+}
+
+tr.ligne {
+  height: 15px;
+}
+
+tr.guestbook {
+  text-align: left;
+  height: 30px;
+}
+
+tr.nomquete {
+  text-align: center;
+  font-weight: bold;
+  vertical-align: top;
+  height: 40px;
+}
+
+tr.video {
+  height: 360px;
+}
+
+span.barre {
+  text-decoration: line-through;
+}
+
+-->

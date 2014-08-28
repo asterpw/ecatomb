@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Skill Database - ecatomb.net : Perfect World
+    </title>
+    <base href="pwi-skill.html" />
+    <link rel="icon" type="image/png" href="./image/icone.png" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
+    <script type="text/javascript" src="./lightbox/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./lightbox/lightbox.js"></script>
+    <link rel="stylesheet" href="./lightbox/lightbox.css" />
+  </head>
+  <body>
+  <table style="text-align: center; display: none;" id="temporaire">
+    <tbody>
+      <tr style="width: 300px;">
+        <td id="chargement">
+          <div style="display: block;" id="javaactive">Loading ... Please wait<br><br><img src="./skill/loading.gif" alt="loading"></div>
+          <noscript>&lt;div&gt;Javascript must be activated&lt;/div&gt;</noscript>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    <table class="bordurels" style="visibility: visible;" border="0" cellpadding="0" cellspacing="0" id="definitif">
+      <tbody>
+        <tr style="height: 22px;">
+          <td style="width: 12px;"> </td>
+          <td style="width: 51px;"> </td>
+          <td style="width: 44px;"> </td>
+          <td style="width: 44px;"> </td>
+          <td style="width: 44px;"> </td>
+          <td style="width: 44px;"> </td>
+          <td style="width: 44px;"> </td>
+          <td style="width: 50px;"> </td>
+          <td style="width: 12px;"> </td>
+          <td style="width: 32px;"> </td>
+          <td style="width: 12px;"> </td>
+          <td style="width: 111px;"> </td>
+          <td style="width: 12px;"> </td>
+          <td style="width: 500px;"> </td>
+          <td style="width: 12px;"> </td>
+        </tr>
+        <tr style="height: 32px;">
+          <td rowspan="6"> </td>
+          <td colspan="7" style="background-image: url(./skill/skill-background.png); background-repeat: no-repeat;"><span id="class_icon"><span style="color:#ffcb4a">Champion</span></span>
+          </td>
+          <td rowspan="6"> </td>
+          <td rowspan="2">
+            <div style="width: 30px; height: 30px; overflow: hidden;"><img style="margin-top: -22px; margin-left: -61px;" src="./skill/iconlist_skill_class.png" id="icon_skill" alt="Skill"> </div>
+          </td>
+          <td rowspan="2"> </td>
+          <td rowspan="2">
+            <form id="form_skill" action=""><div>
+              <span style="color:#ffcb4a">lvl</span>
+              <select id="id_skill" onchange="change_lvl_skill();" style="width: 60px;">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+              <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">Max</option></select></div>
+            </form>
+          </td>
+          <td rowspan="2"> </td>
+          <td rowspan="2" style="text-align: left;"><span id="class_name"><span style="color:#ffcb4a">Champion:</span> <span style="color:#96f5ff">lvl 1</span></span><br><span id="sp"><span style="color:#ffcb4a">Nox:</span> <span style="color:#96f5ff">-</span></span><br><span id="gold"><span style="color:#ffcb4a">Münzen:</span> <span style="color:#96f5ff">-</span></span>
+          </td>
+          <td rowspan="6"> </td>
+        </tr>
+        <tr style="height: 39px;">
+          <td colspan="7" rowspan="2" style="vertical-align: top; background-image: url(./skill/skill-background.png); background-repeat: no-repeat; background-position: 0px -32px;">
+            <div style="width: 321px; height: 485px; overflow: hidden;"><img style="border: 0px solid;" src="./skill/iconlist_skill_class.png" onmousedown="javascript:position(event)" id="skill_tree" alt="skilltree"></div>
+          </td>
+        </tr>
+        <tr style="height: 475px;">
+          <td colspan="5" rowspan="4" style="text-align: left; vertical-align: top;" id="text_skill"><span style="color:#ffffff">Tigerschlund&nbsp;&nbsp;(Level 1)&nbsp;&nbsp;<br><br></span><span style="color:#ffcb4a">Reichweite:　</span><span style="color:#ffffff">Nahkampf <br></span><span style="color:#ffcb4a">Manakosten:　</span><span style="color:#96f5ff">2</span><span style="color:#ffffff"><br></span><span style="color:#ffcb4a">Fokuszeit:　</span><span style="color:#ffffff">0.4　</span><span style="color:#ffcb4a">s<br></span><span style="color:#ffcb4a">Abklingzeit:　</span><span style="color:#ffffff">0.7　</span><span style="color:#ffcb4a">s<br></span><span style="color:#ffcb4a">Abklingzeit:　</span><span style="color:#ffffff">3,0　</span><span style="color:#ffcb4a">s <br></span><span style="color:#ffcb4a">Gewährt Ki:　</span><span style="color:#ffffff">10<br></span><span style="color:#ffcb4a">Waffe　</span><span style="color:#ffffff">Nahkampf&nbsp;&nbsp;<br><br></span><span style="color:#ffcb4a">Geistige Bildung:　</span><span style="color:#ffffff">Geistlicher Eingeweihter<br>Ein fokussierter Schlag, der Physischen Basis-Schaden verursacht.<br>+ </span><span style="color:#96f5ff">102.6</span><span style="color:#ffffff">.</span></td>
+        </tr>
+        <tr style="height: 44px;">
+          <td> </td>
+          <td colspan="3">
+            <form id="form_skill_mode" action=""><div>
+              <select id="id_mode" onchange="change_holy_dark();" style="width: 100px;">
+                <option value="0" selected="selected">-</option>
+                <option value="1">Weisen</option>
+                <option value="2">Weisen +</option>
+                <option value="3">Dämonen</option>
+                <option value="4">Dämonen +</option>
+              </select></div>
+            </form>
+          </td>
+          <td><div style="width: 30px; height: 30px; overflow: hidden; margin:0px auto;"><img style="margin-top: -1px; margin-left: -3219px;" src="./skill/iconlist_skill_class.png" onmousedown="javascript:spark_1()" id="icon_skill_spark_1" alt="Skill"> </div>
+          </td>
+          <td><div style="width: 30px; height: 30px; overflow: hidden; margin:0px auto;"><img style="margin-top: -33px; margin-left: -3219px;" src="./skill/iconlist_skill_class.png" onmousedown="javascript:spark_2()" id="icon_skill_spark_2" alt="Skill"> </div>
+          </td>
+          <td> </td>
+        </tr>
+        <tr style="height: 44px;">
+          <td> </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid;" src="./skill/class-0.png" onmouseover="javascript:change_icon(0)" onmouseout="javascript:change_icon_end(0)" onmousedown="javascript:change_class(0);" id="class_icon0" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-2.png" onmouseover="javascript:change_icon(2)" onmouseout="javascript:change_icon_end(2)" onmousedown="javascript:change_class(2);" id="class_icon2" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-4.png" onmouseover="javascript:change_icon(4)" onmouseout="javascript:change_icon_end(4)" onmousedown="javascript:change_class(4);" id="class_icon4" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-6.png" onmouseover="javascript:change_icon(6)" onmouseout="javascript:change_icon_end(6)" onmousedown="javascript:change_class(6);" id="class_icon6" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-8.png" onmouseover="javascript:change_icon(8)" onmouseout="javascript:change_icon_end(8)" onmousedown="javascript:change_class(8);" id="class_icon8" alt="class"></div>
+          </td>
+          <td> </td>
+        </tr>
+        <tr style="height: 44px;">
+          <td> </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-1.png" onmouseover="javascript:change_icon(1)" onmouseout="javascript:change_icon_end(1)" onmousedown="javascript:change_class(1);" id="class_icon1" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-3.png" onmouseover="javascript:change_icon(3)" onmouseout="javascript:change_icon_end(3)" onmousedown="javascript:change_class(3);" id="class_icon3" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-5.png" onmouseover="javascript:change_icon(5)" onmouseout="javascript:change_icon_end(5)" onmousedown="javascript:change_class(5);" id="class_icon5" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-7.png" onmouseover="javascript:change_icon(7)" onmouseout="javascript:change_icon_end(7)" onmousedown="javascript:change_class(7);" id="class_icon7" alt="class"></div>
+          </td>
+          <td><div style="width: 44px; height: 44px; overflow: hidden;"><img style="border: 0px solid; margin-left: -44px;" src="./skill/class-9.png" onmouseover="javascript:change_icon(9)" onmouseout="javascript:change_icon_end(9)" onmousedown="javascript:change_class(9);" id="class_icon9" alt="class"></div>
+          </td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="bordurelsf" style="visibility: visible;" id="definitif1" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr style="height: 80px;">
+          <td> </td>
+          <td style="text-align: center;"><img style="border: 0px solid;" src="./image/logo-pwi.png" alt="logo">
+          </td>
+          <td>Source:
+          </td>
+          <td style="text-align: left;"><a href="http://w2i.wanmei.com/">w2i.wanmei.com</a><br><a href="http://pwi.de.perfectworld.eu/">pwi.de.perfectworld.eu</a>
+          </td>
+          <td id="version_php">03/05/2014</td>
+          <td> </td>
+        </tr>
+        <tr class="bord">
+          <td style="width: 20px;"> </td>
+          <td style="width: 317px;"> </td>
+          <td style="width: 80px;"> </td>
+          <td style="width: 330px;"> </td>
+          <td style="width: 265px;"> </td>
+          <td style="width: 12px;"> </td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript">
+document.getElementById('javaactive').style.display="block";
+    </script>
+    <script type="text/javascript" src="./skill/fonction-skill.js"></script>
+    <script type="text/javascript" src="./skill/fonction-skill-pwi-de.js"></script>
+    <script type="text/javascript">
+function position(e){
+  find_coord(e);
+}
+
+window.onload = function() {
+  debut();
+  document.getElementById('temporaire').style.display="none";
+  document.getElementById('definitif').style.visibility="visible";
+  document.getElementById('definitif1').style.visibility="visible";
+}
+    </script>
+  </body>
+</html>

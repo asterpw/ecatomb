@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Pet's skill - ecatomb.net : Perfect World
+    </title>
+    <base href="ru-pet-skill.html" />
+    <link rel="icon" type="image/png" href="./image/icone.png" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
+    <script type="text/javascript" src="./lightbox/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./lightbox/lightbox.js"></script>
+    <link rel="stylesheet" href="./lightbox/lightbox.css" />
+  </head>
+  <body>
+    <table class="speaker" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="width: 95px;">
+          </td>
+          <td style="width: 140px;"><br>Pet's skill
+          </td>
+          <td style="width: 45px;">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="text-align: center; display: none;" id="temporaire">
+     <tbody>
+        <tr style="width: 300px;">
+          <td id="chargement">
+            <div style="display: none;" id="javaactive">Loading ... Please wait<br><br><img src="./skill/loading.gif" alt="loading"></div>
+            <noscript>&lt;div&gt;Javascript must be activated&lt;/div&gt;</noscript>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="bordurel" style="visibility: visible;" id="definitif" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr class="bord">
+          <td style="width: 75px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 300px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 75px;"> </td>
+        </tr>
+        <tr style="height: 50px;">
+          <td> </td>
+          <td style="text-align: left; color:#ffcb4a">Умение</td>
+          <td style="text-align: left;">
+            <form id="skill" action="">
+            <div> <select id="nomskill" onchange="affiche();">
+              <option value="6871" selected="selected">Яростная атака</option>
+              <option value="7471">Яростный укус</option>
+              <option value="7481">Огненный шар</option>
+              <option value="7491">Ледяной снаряд</option>
+              <option value="7501">Ядовитый туман</option>
+              <option value="7511">Разряд молнии</option>
+              <option value="7521">Песчаный шквал</option>
+              <option value="7531">Призывный рык</option>
+              <option value="7541">Жуткий вой</option>
+              <option value="7551">Слабина</option>
+              <option value="7561">Устрашение</option>
+              <option value="7571">Пронзительный крик</option>
+              <option value="7581">Замедление</option>
+              <option value="7591">Прочная шкура</option>
+              <option value="7601">Прилив сил</option>
+              <option value="7611">Наскок</option>
+              <option value="7951">Похищение жизни</option>
+              <option value="7971">Осушение жизни</option>
+              <option value="7961">Похищение энергии</option>
+              <option value="7981">Осушение энергии</option>
+              <option value="7991">Жертва</option>
+              <option value="8001">Неотвратимый удар</option>
+              <option value="8011">Отражение</option>
+              <option value="8021">Острые когти</option>
+              <option value="8031">Сила духа</option>
+              <option value="8041">Толстая шкура</option>
+              <option value="8051">Удача</option>
+              <option value="20581">Дух битв</option>
+              <option value="20591">Тяжелый удар</option>
+              <option value="20611">Укрытие духа</option>
+              <option value="20621">Кровожадность</option>
+              <option value="20771">Священная особа</option>
+              <option value="20781">На крыльях феникса</option>
+              <option value="20791">Бог в латах</option>
+              <option value="20801">Костяной серп</option>
+              <option value="20811">Ледяной панцирь</option>
+              <option value="20821">Жало</option>
+              <option value="20831">Огненная купель</option>
+              <option value="20841">Быстрая стрельба</option>
+              <option value="20851">Цунами</option>
+              <option value="20861">Покров ночи</option>
+              <option value="20871">Воздушный штурм</option>
+              <option value="20881">Ду-ду</option>
+              <option value="20891">Верный пес</option>
+              <option value="20901">Бег пламени</option>
+              <option value="20911">Сонливость</option>
+              <option value="20921">Токсин слабости</option>
+              <option value="20931">Крушитель</option>
+              <option value="20941">Узник</option>
+              <option value="20961">Утомление</option>
+              <option value="20981">Тишина</option>
+              <option value="21001">Сломанный клинок</option>
+              <option value="21021">Перегруз</option>
+              <option value="21041">Шум</option>
+              <option value="21061">Сглаз</option>
+              <option value="21081">Поглощение души</option>
+              <option value="21101">Острие</option>
+              <option value="21121">Запрет полетов</option>
+              <option value="21141">Порча</option>
+              <option value="21161">Провокация</option>
+              <option value="21181">Азарт</option>
+              <option value="21201">Точность</option>
+              <option value="21211">Потрошитель</option>
+              <option value="21221">Подвижность</option>
+              <option value="21231">Регенерация</option>
+              <option value="21241">Непоколебимость</option>
+              <option value="21251">Боевой задор</option>
+              <option value="21261">Бог войны</option>
+              <option value="21271">Душа</option>
+              <option value="21281">Прорыв</option>
+              <option value="21291">Самолечение</option>
+              <option value="21301">Кулак огня</option>
+              <option value="21311">Решимость</option>
+              <option value="21321">Удар из-за угла</option>
+              <option value="21331">Финал</option>
+              <option value="21341">Внезапный гром</option>
+              <option value="21351">Рев</option>
+              <option value="21361">Экзорцизм</option>
+              <option value="21381">Полный разгром</option>
+              <option value="21391">Тяжелое бремя</option>
+              <option value="21401">Ледяная грань</option>
+              <option value="21411">Листопад</option>
+              <option value="21421">Ломающий горы</option>
+              <option value="21461">Тень демона</option>
+            </select>
+            </div></form>
+          </td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-1.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:mini();" id="lvl-min">lvl 1</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:moins();" id="lvl-moins">lvl -</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:plus();" id="lvl-plus">lvl +</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:maxi();" id="lvl-max">Max</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;"><span style="color:#ffcb4a">Pet's level</span></td>
+          <td style="vertical-align: top; text-align: left;" id="petlvl"><span style="color:#96f5ff">1</span></td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;"><span style="color:#ffcb4a">духа</span></td>
+          <td style="vertical-align: top; text-align: left;" id="spirit"><span style="color:#96f5ff">5 000</span></td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="ligne"><td colspan="8"><img style="border: 0px solid;" src="./image/ligne.png" alt="line"></td></tr>
+      </tbody>
+    </table>
+    <table class="bordurelf" style="visibility: visible;" id="definitif2" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;" id="texte"><span style="color:#ffffff">Яростная атака&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Уровень 1<br><br></span><span style="color:#ffcb4a">Макс. ур.&nbsp;&nbsp;</span><span style="color:#ffffff">5 </span><span style="color:#ffcb4a"> <br></span><span style="color:#ffcb4a">Перезарядка:　</span><span style="color:#ffffff">8</span><span style="color:#ffcb4a"> сек.<br><br></span><span style="color:#ffffff">Мощная атака, наносящая урон в размере </span><span style="color:#96f5ff">140%</span><span style="color:#ffffff"> от базового физического урона питомца.</span></td>
+          <td> </td>
+        </tr>
+        <tr class="bord">
+          <td style="width: 75px;"> </td>
+          <td style="width: 800px;"> </td>
+          <td style="width: 75px;"> </td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript" src="./skill/fonction-pet.js"></script>
+    <script type="text/javascript" src="./skill/fonction-pet-ru.js"></script>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById('temporaire').style.display="none";
+  document.getElementById('definitif').style.visibility="visible";
+  document.getElementById('definitif2').style.visibility="visible";
+  affiche();
+}
+    </script>
+  </body>
+</html>

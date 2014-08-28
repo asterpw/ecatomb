@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Pet's skill - ecatomb.net : Perfect World
+    </title>
+    <base href="ph-pet-skill.html" />
+    <link rel="icon" type="image/png" href="./image/icone.png" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
+    <script type="text/javascript" src="./lightbox/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./lightbox/lightbox.js"></script>
+    <link rel="stylesheet" href="./lightbox/lightbox.css" />
+  </head>
+  <body>
+    <table class="speaker" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="width: 95px;">
+          </td>
+          <td style="width: 140px;"><br>Pet's skill
+          </td>
+          <td style="width: 45px;">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="text-align: center; display: none;" id="temporaire">
+     <tbody>
+        <tr style="width: 300px;">
+          <td id="chargement">
+            <div style="display: none;" id="javaactive">Loading ... Please wait<br><br><img src="./skill/loading.gif" alt="loading"></div>
+            <noscript>&lt;div&gt;Javascript must be activated&lt;/div&gt;</noscript>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="bordurel" style="visibility: visible;" id="definitif" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr class="bord">
+          <td style="width: 75px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 300px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 75px;"> </td>
+        </tr>
+        <tr style="height: 50px;">
+          <td> </td>
+          <td style="text-align: left; color:#ffcb4a">Skill</td>
+          <td style="text-align: left;">
+            <form id="skill" action="">
+            <div> <select id="nomskill" onchange="affiche();">
+              <option value="6871" selected="selected">Raging Attack</option>
+              <option value="7471">Raging Bite</option>
+              <option value="7481">Fireball</option>
+              <option value="7491">Ice Shard</option>
+              <option value="7501">Poison Mist</option>
+              <option value="7511">Call Lightning</option>
+              <option value="7521">Rising Sand</option>
+              <option value="7531">Tiger’s Challenge</option>
+              <option value="7541">Wailing Cry</option>
+              <option value="7551">Shatter</option>
+              <option value="7561">Injure</option>
+              <option value="7571">Piercing Cry</option>
+              <option value="7581">Slow</option>
+              <option value="7591">Tough Hide</option>
+              <option value="7601">Inspire</option>
+              <option value="7611">Snipsnap</option>
+              <option value="7951">Drain Life</option>
+              <option value="7971">Draw Life</option>
+              <option value="7961">Drain Mana</option>
+              <option value="7981">Draw Mana</option>
+              <option value="7991">Sacrifice</option>
+              <option value="8001">Smash</option>
+              <option value="8011">Retribution</option>
+              <option value="8021">Potence</option>
+              <option value="8031">Driving Spirit</option>
+              <option value="8041">Iron Armor</option>
+              <option value="8051">Fortitude</option>
+              <option value="20581">战魂</option>
+              <option value="20591">重击</option>
+              <option value="20611">神隐</option>
+              <option value="20621">嗜血</option>
+              <option value="20771">斗战圣体</option>
+              <option value="20781">凤翼天翔</option>
+              <option value="20791">金甲天神</option>
+              <option value="20801">骨镰</option>
+              <option value="20811">冰石铠甲</option>
+              <option value="20821">蜂刺</option>
+              <option value="20831">浴火重生</option>
+              <option value="20841">急速射击</option>
+              <option value="20851">海啸</option>
+              <option value="20861">夜幕</option>
+              <option value="20871">飞天蕾丝突击</option>
+              <option value="20881">嘟</option>
+              <option value="20891">忠犬</option>
+              <option value="20901">暗影冲刺</option>
+              <option value="20911">残废术</option>
+              <option value="20921">虚弱毒素</option>
+              <option value="20931">灵毁</option>
+              <option value="20941">禁锢</option>
+              <option value="20961">致残</option>
+              <option value="20981">沉寂</option>
+              <option value="21001">破刃</option>
+              <option value="21021">超重</option>
+              <option value="21041">噪音</option>
+              <option value="21061">魔音</option>
+              <option value="21081">摄魂</option>
+              <option value="21101">锋锐</option>
+              <option value="21121">禁空</option>
+              <option value="21141">侵蚀</option>
+              <option value="21161">挑衅</option>
+              <option value="21181">狂热</option>
+              <option value="21201">精准</option>
+              <option value="21211">屠魔</option>
+              <option value="21221">闪灵</option>
+              <option value="21231">再生</option>
+              <option value="21241">不屈</option>
+              <option value="21251">斗志</option>
+              <option value="21261">战神</option>
+              <option value="21271">神魂</option>
+              <option value="21281">霸体</option>
+              <option value="21291">自愈</option>
+              <option value="21301">火拳</option>
+              <option value="21311">裁决</option>
+              <option value="21321">狙击</option>
+              <option value="21331">终结</option>
+              <option value="21341">破空</option>
+              <option value="21351">怒吼</option>
+              <option value="21361">猎魔</option>
+              <option value="21381">横扫六合</option>
+              <option value="21391">千斤压顶</option>
+              <option value="21401">冰棱</option>
+              <option value="21411">落叶飞花</option>
+              <option value="21421">五指断岳</option>
+              <option value="21461">魅影</option>
+            </select>
+            </div></form>
+          </td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-1.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:mini();" id="lvl-min">lvl 1</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:moins();" id="lvl-moins">lvl -</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:plus();" id="lvl-plus">lvl +</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:maxi();" id="lvl-max">Max</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;"><span style="color:#ffcb4a">Pet's level</span></td>
+          <td style="vertical-align: top; text-align: left;" id="petlvl"><span style="color:#96f5ff">1</span></td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;"><span style="color:#ffcb4a">Soul</span></td>
+          <td style="vertical-align: top; text-align: left;" id="spirit"><span style="color:#96f5ff">5 000</span></td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="ligne"><td colspan="8"><img style="border: 0px solid;" src="./image/ligne.png" alt="line"></td></tr>
+      </tbody>
+    </table>
+    <table class="bordurelf" style="visibility: visible;" id="definitif2" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;" id="texte"><span style="color:#ffffff">Raging Attack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lv. 1<br><br></span><span style="color:#ffcb4a">Max Lv.&nbsp;&nbsp;</span><span style="color:#ffffff">5&nbsp;&nbsp;</span><span style="color:#ffcb4a"><br></span><span style="color:#ffcb4a">Cooldown:&nbsp;&nbsp;</span><span style="color:#ffffff">8&nbsp;&nbsp;</span><span style="color:#ffcb4a">sec.<br><br></span><span style="color:#ffffff">A powerful attack that deals damage equal to </span><span style="color:#96f5ff">140% </span><span style="color:#ffffff">of base attack.</span></td>
+          <td> </td>
+        </tr>
+        <tr class="bord">
+          <td style="width: 75px;"> </td>
+          <td style="width: 800px;"> </td>
+          <td style="width: 75px;"> </td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript" src="./skill/fonction-pet.js"></script>
+    <script type="text/javascript" src="./skill/fonction-pet-ph.js"></script>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById('temporaire').style.display="none";
+  document.getElementById('definitif').style.visibility="visible";
+  document.getElementById('definitif2').style.visibility="visible";
+  affiche();
+}
+    </script>
+  </body>
+</html>

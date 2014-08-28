@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Pet's skill - ecatomb.net : Perfect World
+    </title>
+    <base href="pwi-pet-skill.html" />
+    <link rel="icon" type="image/png" href="./image/icone.png" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
+    <script type="text/javascript" src="./lightbox/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./lightbox/lightbox.js"></script>
+    <link rel="stylesheet" href="./lightbox/lightbox.css" />
+  </head>
+  <body>
+    <table class="speaker" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="width: 95px;">
+          </td>
+          <td style="width: 140px;"><br>Pet's skill
+          </td>
+          <td style="width: 45px;">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="text-align: center; display: none;" id="temporaire">
+     <tbody>
+        <tr style="width: 300px;">
+          <td id="chargement">
+            <div style="display: none;" id="javaactive">Loading ... Please wait<br><br><img src="./skill/loading.gif" alt="loading"></div>
+            <noscript>&lt;div&gt;Javascript must be activated&lt;/div&gt;</noscript>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="bordurel" style="visibility: visible;" id="definitif" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr class="bord">
+          <td style="width: 75px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 300px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 100px;"> </td>
+          <td style="width: 75px;"> </td>
+        </tr>
+        <tr style="height: 50px;">
+          <td> </td>
+          <td style="text-align: left; color:#ffcb4a">Skill</td>
+          <td style="text-align: left;">
+            <form id="skill" action="">
+            <div> <select id="nomskill" onchange="affiche();">
+              <option value="6871" selected="selected">Bash</option>
+              <option value="7471">Flesh Ream</option>
+              <option value="7481">Fireball</option>
+              <option value="7491">Icicle</option>
+              <option value="7501">Toxic Mist</option>
+              <option value="7511">Thunderbolt</option>
+              <option value="7521">Sandblow</option>
+              <option value="7531">Roar</option>
+              <option value="7541">Howl</option>
+              <option value="7551">Pierce</option>
+              <option value="7561">Threaten</option>
+              <option value="7571">Shriek</option>
+              <option value="7581">Slow</option>
+              <option value="7591">Tough</option>
+              <option value="7601">Boost</option>
+              <option value="7611">Pounce</option>
+              <option value="7951">Bloodthirst</option>
+              <option value="7971">Bloodhunger</option>
+              <option value="7961">Consume</option>
+              <option value="7981">Devour</option>
+              <option value="7991">Sacrifice</option>
+              <option value="8001">Penetrate</option>
+              <option value="8011">Reflect</option>
+              <option value="8021">Claw</option>
+              <option value="8031">Protect</option>
+              <option value="8041">Strong</option>
+              <option value="8051">Blessing of the Pack</option>
+              <option value="20581">Ghost</option>
+              <option value="20591">Soul Eating</option>
+              <option value="20611">Spirit</option>
+              <option value="20621">Bloodthirst</option>
+              <option value="20771">Combat Saint</option>
+              <option value="20781">Phoenix Wings Flying</option>
+              <option value="20791">Gold Armor Deity</option>
+              <option value="20801">Bone Sickle</option>
+              <option value="20811">Ice Stone Armor</option>
+              <option value="20821">Bee Thorn</option>
+              <option value="20831">Reborn In Fire</option>
+              <option value="20841">Rapid Shot</option>
+              <option value="20851">Tsunami</option>
+              <option value="20861">Night</option>
+              <option value="20871">Flying Lace Attack</option>
+              <option value="20881">Boo</option>
+              <option value="20891">Loyal Dog</option>
+              <option value="20901">Shadow Dash</option>
+              <option value="20911">Disable Magic</option>
+              <option value="20921">Weak Toxin</option>
+              <option value="20931">Spirit Destory</option>
+              <option value="20941">Imprison</option>
+              <option value="20961">Cripple</option>
+              <option value="20981">Quiet</option>
+              <option value="21001">Break Blade</option>
+              <option value="21021">Overload</option>
+              <option value="21041">Noise</option>
+              <option value="21061">Soulcough</option>
+              <option value="21081">Eat Soul</option>
+              <option value="21101">Sharpen</option>
+              <option value="21121">Grounding</option>
+              <option value="21141">Corroding</option>
+              <option value="21161">Provoking</option>
+              <option value="21181">Craze</option>
+              <option value="21201">Precision</option>
+              <option value="21211">Wraithslayer</option>
+              <option value="21221">Flash</option>
+              <option value="21231">Regeneration</option>
+              <option value="21241">Unyielding</option>
+              <option value="21251">Morale</option>
+              <option value="21261">Ares</option>
+              <option value="21271">Mind</option>
+              <option value="21281">Petrifaction</option>
+              <option value="21291">Self-healing</option>
+              <option value="21301">Flame Fist</option>
+              <option value="21311">Justice</option>
+              <option value="21321">Assassination</option>
+              <option value="21331">Deadly Strike</option>
+              <option value="21341">Shocking Sky</option>
+              <option value="21351">Howl</option>
+              <option value="21361">Demon Hunting</option>
+              <option value="21381">Rule The World</option>
+              <option value="21391">Heavy Load</option>
+              <option value="21401">Ice Stick</option>
+              <option value="21411">Fallen Leaf and Flying Flowers</option>
+              <option value="21421">Bare-handed Cut</option>
+              <option value="21461">Shadow</option>
+            </select>
+            </div></form>
+          </td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-1.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:mini();" id="lvl-min">lvl 1</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:moins();" id="lvl-moins">lvl -</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:plus();" id="lvl-plus">lvl +</td>
+          <td style="width: 60px; font-weight:bold; background-image: url(./skill/selection-2.png); background-repeat: no-repeat; background-position: center center;" onmousedown="javascript:maxi();" id="lvl-max">Max</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;"><span style="color:#ffcb4a">Pet's level</span></td>
+          <td style="vertical-align: top; text-align: left;" id="petlvl"><span style="color:#96f5ff">1</span></td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;"><span style="color:#ffcb4a">Spirit</span></td>
+          <td style="vertical-align: top; text-align: left;" id="spirit"><span style="color:#96f5ff">5 000</span></td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="ligne"><td colspan="8"><img style="border: 0px solid;" src="./image/ligne.png" alt="line"></td></tr>
+      </tbody>
+    </table>
+    <table class="bordurelf" style="visibility: visible;" id="definitif2" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td> </td>
+          <td style="vertical-align: top; text-align: left;" id="texte"><span style="color:#ffffff">Bash&nbsp;&nbsp;(Level 1)<br><br></span><span style="color:#ffcb4a">Maximum Skill Level　</span><span style="color:#ffffff">5　</span><span style="color:#ffcb4a"><br></span><span style="color:#ffcb4a">Cooldown　</span><span style="color:#ffffff">8　</span><span style="color:#ffcb4a">seconds<br></span><span style="color:#ffffff">Launch a fierce strike at the enemy, dealing </span><span style="color:#96f5ff">140%</span><span style="color:#ffffff"> of Pet's base physical damage.</span></td>
+          <td> </td>
+        </tr>
+        <tr class="bord">
+          <td style="width: 75px;"> </td>
+          <td style="width: 800px;"> </td>
+          <td style="width: 75px;"> </td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript" src="./skill/fonction-pet.js"></script>
+    <script type="text/javascript" src="./skill/fonction-pet-pwi.js"></script>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById('temporaire').style.display="none";
+  document.getElementById('definitif').style.visibility="visible";
+  document.getElementById('definitif2').style.visibility="visible";
+  affiche();
+}
+    </script>
+  </body>
+</html>
